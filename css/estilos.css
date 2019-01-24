@@ -1,0 +1,16 @@
+@font-face{
+  font-family: Dancing;
+  src: url(../fuentes/dancing-script.ttf);
+}
+body{
+  font-family: Dancing;
+}
+header{
+  background-color: #5b7989;
+}
+.titulo h1{
+  margin: 100%
+  text-align: left;
+  color: white;
+  text-shadow: 2px, #02010a;
+}
