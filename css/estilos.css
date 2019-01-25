@@ -2,15 +2,46 @@
   font-family: Dancing;
   src: url(../fuentes/dancing-script.ttf);
 }
+html{
+  background-color: #02010a;
+}
 body{
   font-family: Dancing;
+  margin: 100px;
 }
 header{
   background-color: #5b7989;
+  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  width: 900px;
+
 }
-.titulo h1{
-  margin: 100%
+
+header > .contenido > h1{
   text-align: left;
   color: white;
-  text-shadow: 2px, #02010a;
+  text-shadow: 2px 2px 2px #02010a;
+  display: inline-block;
+  height: 100%;
+  float: left;
+}
+header > .contenido > .menu{
+  display: inline-block;
+  text-align: right;
+  float: right;
+  height: 100%;
+  margin-top: 5px;
+  font-size: 25px;
+}
+.menu > nav > p > a{
+  color: white;
+}
+.menu > nav > p > a[id="inicio"]{
+  color: white;
+  text-decoration: none;
+}
+.menu > nav > p > a[id="paisajes"]{
+  color: white;
+  text-decoration: none;
 }
