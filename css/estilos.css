@@ -7,41 +7,48 @@ html{
 }
 body{
   font-family: Dancing;
-  margin: 100px;
+}
+.contenido > header{
+  width: 900px;
 }
 header{
   background-color: #5b7989;
   border-radius: 10px;
   position: fixed;
   top: 0;
-  width: 900px;
-
+}
+nav{
+  float: right;
 }
 
-header > .contenido > h1{
-  text-align: left;
+.titulo > h1{
+  text-align: right;
   color: white;
   text-shadow: 2px 2px 2px #02010a;
   display: inline-block;
   height: 100%;
   float: left;
 }
-header > .contenido > .menu{
-  display: inline-block;
-  text-align: right;
-  float: right;
+.menu > nav > div{
   height: 100%;
-  margin-top: 5px;
+  margin: 5px;
   font-size: 25px;
+  display: inline-block;
+  list-style-type: none;
+  text-align: left;
 }
-.menu > nav > p > a{
-  color: white;
+.menu > nav > div > p > a{
+  color:white;
 }
-.menu > nav > p > a[id="inicio"]{
+.index > .menu > nav > div > p > a[id="inicio"]{
   color: white;
   text-decoration: none;
 }
-.menu > nav > p > a[id="paisajes"]{
+.paisajes > .menu > nav > div > p > a[id="paisajes"]{
+  color: white;
+  text-decoration: none;
+}
+.retratos > .menu > nav > div > p > a[id="retratos"]{
   color: white;
   text-decoration: none;
 }
