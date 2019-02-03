@@ -7,22 +7,28 @@ html{
 }
 body{
   font-family: Dancing;
+  text-align: center;
+  margin: 0 auto;
 }
-.contenido > header{
+.contenido{
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
   width: 900px;
 }
 header{
   background-color: #5b7989;
-  border-radius: 10px;
-  position: fixed;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: absolute;
   top: 0;
+  width: 900px;
+  display: inline-block;
 }
 nav{
   float: right;
 }
-
 .titulo > h1{
-  text-align: right;
   color: white;
   text-shadow: 2px 2px 2px #02010a;
   display: inline-block;
@@ -34,8 +40,6 @@ nav{
   margin: 5px;
   font-size: 25px;
   display: inline-block;
-  list-style-type: none;
-  text-align: left;
 }
 .menu > nav > div > p > a{
   color:white;
@@ -51,4 +55,20 @@ nav{
 .retratos > .menu > nav > div > p > a[id="retratos"]{
   color: white;
   text-decoration: none;
+}
+.imagencentral{
+  background-color: #82c3a6;
+  width: 900px;
+  margin-top: 400px;
+  margin: auto;
+}
+.imagencentral > figure > img{
+    display: block;
+    margin: 10% auto 0 auto;
+    text-align: center;
+}
+.imagensecundaria{
+  background-color: #d5c75f;
+  border: 1px solid blue;
+  width: 900px;
 }
