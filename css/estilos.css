@@ -15,6 +15,7 @@ body{
   margin: 0 auto;
   width: 900px;
 }
+
 header{
   background-color: #5b7989;
   border-top-right-radius: 10px;
@@ -54,9 +55,7 @@ header{
   color: white;
   text-decoration: none;
 }
-section{
-  margin: 0px;
-}
+
 .imagencentral{
   margin-top: -4px;
   margin-bottom: -4px;
@@ -65,9 +64,26 @@ section{
 }
 
 .imagencentral > img{
-  width: 60%;
+  margin: 10px;
+  width: 70%;
 }
 .imagensecundaria{
   background-color: #d5c75f;
   border: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+}
+
+.imagensecundaria > figure[id="imagen1"] > img{
+  text-align: center;
+  width: 79%;
+  transition: transform 1s;
+}
+.imagensecundaria > figure[id="imagen1"] > img:hover{
+  transform: rotate(10deg);
+}
+.imagensecundaria > figure[id="imagen2"] > img{
+  text-align: center;
+  width: 100%;
+
 }
