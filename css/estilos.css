@@ -4,42 +4,40 @@
 }
 html{
   background-color: #02010a;
+
 }
 body{
   font-family: Dancing;
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
 }
 .contenido{
   margin: 0 auto;
-  text-align: left;
-  display: inline-block;
   width: 900px;
 }
 header{
   background-color: #5b7989;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  position: absolute;
-  top: 0;
   width: 900px;
   display: inline-block;
 }
-nav{
+.menu{
   float: right;
 }
 .titulo > h1{
   color: white;
   text-shadow: 2px 2px 2px #02010a;
-  display: inline-block;
-  height: 100%;
   float: left;
 }
-.menu > nav > div{
-  height: 100%;
+.menu > nav{
   margin: 5px;
   font-size: 25px;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+}
+.menu nav div{
+  padding: 0px 5px;
 }
 .menu > nav > div > p > a{
   color:white;
@@ -56,19 +54,20 @@ nav{
   color: white;
   text-decoration: none;
 }
+section{
+  margin: 0px;
+}
 .imagencentral{
+  margin-top: -4px;
+  margin-bottom: -4px;
   background-color: #82c3a6;
   width: 900px;
-  margin-top: 400px;
-  margin: auto;
 }
-.imagencentral > figure > img{
-    display: block;
-    margin: 10% auto 0 auto;
-    text-align: center;
+
+.imagencentral > img{
+  width: 60%;
 }
 .imagensecundaria{
   background-color: #d5c75f;
   border: 1px solid blue;
-  width: 900px;
 }
