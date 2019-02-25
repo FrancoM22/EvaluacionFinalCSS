@@ -2,116 +2,154 @@
   font-family: Dancing;
   src: url(../fuentes/dancing-script.ttf);
 }
-html{
-  background-color: #02010a;
+@media (min-width:900px){
+  html{
+    background-color: #02010a;
+  }
+  body{
+    font-family: Dancing;
+    margin: 0 auto;
+    text-align: center;
+  }
+  img{
+    box-shadow: 2px 2px 2px #02010a;
+  }
+  .contenido{
+    margin: 0 auto;
+    width: 900px;
+  }
+  header{
+    background-color: #5b7989;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    display: inline-block;
+  }
+  .menu{
+    float: right;
+  }
+  .titulo h1{
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    float: left;
+    margin-left: 10px;
+  }
+  .menu nav{
+    margin: 5px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+  }
+  .menu nav div{
+    padding: 0px 5px;
+  }
+  .menu > nav > div > p > a{
+    color:white;
+  }
+  .index > .menu > nav > div > p > a[id="inicio"]{
+    color: white;
+    text-decoration: none;
+  }
+  .paisajes > .menu > nav > div > p > a[id="paisajes"]{
+    color: white;
+    text-decoration: none;
+  }
+  .retratos > .menu > nav > div > p > a[id="retratos"]{
+    color: white;
+    text-decoration: none;
+  }
+  .imagencentral{
+    margin-top: -4px;
+    margin-bottom: -4px;
+    background-color: #82c3a6;
+    width: 100%;
+  }
+  .imagencentral > img{
+    margin: 10px;
+    width: 70%;
+  }
+  .imagensecundaria{
+    background-color: #d5c75f;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+  }
+  .imagensecundaria figure h2 a{
+    color: black;
+  }
+  .imagensecundaria > figure[id="imagen1"] > img{
+    text-align: center;
+    width: 90%;
+    transition: transform 1s;
+  }
+  .imagensecundaria > figure[id="imagen1"] > img:hover{
+    transform: rotate(10deg);
+  }
+  .imagensecundaria > figure[id="imagen2"] > img{
+    text-align: center;
+    width: 100%;
+    transition: transform 1s;
+  }
+  .imagensecundaria > figure[id="imagen2"] > img:hover{
+    transform: translate(20px,-5px);
+  }
+  .galeria{
+    background-color: #d5c75f;
+    border: 1px solid blue;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    display: flex;
+    flex-direction: row;
+  }
+  .galeria div[class*="paisaje"]{
+    min-height: 200px;
+    
+  }
+  .galeria div img{
+    margin: 10px;
+    width: 90%;
+  }
+  footer{
+    background-color: #C6d5c5;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  footer div{
+    width: 25%;
+    font-size: 100%;
+  }
+  footer div p img{
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
+  }
 }
-body{
-  font-family: Dancing;
-  margin: 0 auto;
-  text-align: center;
-}
-img{
-  box-shadow: 2px 2px 2px #02010a;
-}
-.contenido{
-  margin: 0 auto;
-  width: 900px;
-}
-
-header{
-  background-color: #5b7989;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  width: 100%;
-  display: inline-block;
-}
-.menu{
-  float: right;
-}
-.titulo h1{
-  color: white;
-  text-shadow: 2px 2px #02010a;
-  float: left;
-  margin-left: 10px;
-}
-.menu nav{
-  margin: 5px;
-  font-size: 25px;
-  display: flex;
-  flex-direction: row;
-}
-.menu nav div{
-  padding: 0px 5px;
-}
-.menu > nav > div > p > a{
-  color:white;
-}
-.index > .menu > nav > div > p > a[id="inicio"]{
-  color: white;
-  text-decoration: none;
-}
-.paisajes > .menu > nav > div > p > a[id="paisajes"]{
-  color: white;
-  text-decoration: none;
-}
-.retratos > .menu > nav > div > p > a[id="retratos"]{
-  color: white;
-  text-decoration: none;
-}
-.imagencentral{
-  margin-top: -4px;
-  margin-bottom: -4px;
-  background-color: #82c3a6;
-  width: 100%;
-}
-.imagencentral > img{
-  margin: 10px;
-  width: 70%;
-}
-.imagensecundaria{
-  background-color: #d5c75f;
-  border: 1px solid blue;
-  display: flex;
-  flex-direction: row;
-}
-.imagensecundaria figure h2 a{
-  color: black;
-}
-.imagensecundaria > figure[id="imagen1"] > img{
-  text-align: center;
-  width: 90%;
-  transition: transform 1s;
-}
-.imagensecundaria > figure[id="imagen1"] > img:hover{
-  transform: rotate(10deg);
-}
-.imagensecundaria > figure[id="imagen2"] > img{
-  text-align: center;
-  width: 100%;
-  transition: transform 1s;
-}
-.imagensecundaria > figure[id="imagen2"] > img:hover{
-  transform: translate(20px,-5px);
-}
-footer{
-  background-color: #C6d5c5;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-footer div{
-  width: 25%;
-  font-size: 100%;
-}
-footer div p img{
-  width: 15px;
-  height: 15px;
-  box-shadow: none;
-}
-@media (max-width:900px){
+@media (max-width:899px){
+  html{
+    background-color: #02010a;
+  }
+  body{
+    font-family: Dancing;
+    margin: 0 auto;
+    text-align: center;
+  }
+  header{
+    background-color: #5b7989;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    display: inline-block;
+  }
+  .titulo h1{
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    float: left;
+    margin-left: 10px;
+  }
   .contenido{
     margin: 0 auto;
     width: 100%;
@@ -124,21 +162,73 @@ footer div p img{
     display: flex;
     flex-direction: column;
   }
-  .menu nav div{
-
+  .menu nav{
+    margin: 5px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
   }
-  footer{
+  .menu nav div{
+    padding: 0px 5px;
+  }
+  .menu > nav > div > p > a{
+    color:white;
+  }
+  .index > .menu > nav > div > p > a[id="inicio"]{
+    color: white;
+    text-decoration: none;
+  }
+  .paisajes > .menu > nav > div > p > a[id="paisajes"]{
+    color: white;
+    text-decoration: none;
+  }
+  .retratos > .menu > nav > div > p > a[id="retratos"]{
+    color: white;
+    text-decoration: none;
+  }
+  .imagencentral{
+    margin-top: -4px;
+    margin-bottom: -4px;
+    background-color: #82c3a6;
+    width: 100%;
+  }
+  .imagencentral > img{
+    margin: 10px;
+    width: 70%;
+  }
+  .imagensecundaria{
+    background-color: #d5c75f;
+    border: 1px solid blue;
     display: flex;
     flex-direction: column;
-  }
-  footer div{
-    width: 100%;
-    font-size: 100%;
   }
   .imagensecundaria > figure[id="imagen1"] > img{
     width: 90%;
   }
   .imagensecundaria > figure[id="imagen2"] > img{
     width: 90%;
+  }
+  .imagensecundaria figure h2 a{
+    color: black;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #C6d5c5;
+    bottom: 0;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  footer div{
+    width: 100%;
+    font-size: 100%;
+  }
+  footer div p img{
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
   }
 }
